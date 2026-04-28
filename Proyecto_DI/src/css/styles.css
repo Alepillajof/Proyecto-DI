@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/1f1fab22-5a7d-447e-9802-e081f7e6de44.jpg");
+    background-size: cover;      /* ocupa toda la pantalla */
+    background-position: center; /* centrada */
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONDO PRINCIPAL */
+.header {
+    height: 100vh;
+    background: url("../images/fondo.png") no-repeat center/cover;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+/* LOGO */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #a855f7;
+}
+
+.logo span {
+    color: white;
+}
+
+/* MENU */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu li:hover {
+    color: #a855f7;
+}
+
+/* HERO CONTENT */
+.hero {
+    position: relative;
+    height: 100%;
+    color: cyan;
+}
+
+/* POSICIONES */
+.left {
+    position: absolute;
+    left: 50px;
+}
+
+.right {
+    position: absolute;
+    right: 50px;
+}
+
+.top {
+    top: 35%;
+}
+
+.bottom {
+    bottom: 25%;
+}
+
+/* TEXTO CENTRAL */
+.texto {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: cyan;
+    padding: 0 20px;
+}
