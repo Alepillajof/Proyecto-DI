@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("../images/1f1fab22-5a7d-447e-9802-e081f7e6de44.jpg");
+    background-image: url("../images/394b3811-e16f-41c8-be2f-75a6879246c9.png");
     background-size: cover;      /* ocupa toda la pantalla */
     background-position: center; /* centrada */
     background-repeat: no-repeat;
@@ -102,4 +102,35 @@ body {
     font-size: 24px;
     color: cyan;
     padding: 0 20px;
+}
+
+/* MENU LINKS */
+.menu li {
+    cursor: pointer;
+    position: relative;
+}
+
+/* EFECTO SUBRAYADO AL PASAR EL MOUSE */
+.menu li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: white; /* mismo color, no cambia */
+    transition: 0.3s;
+}
+
+.menu li:hover::after {
+    width: 100%;
+}
+
+.menu li:last-child {
+    font-weight: bold;
+}
+
+/* QUITAR subrayado en Log in */
+.menu li:last-child::after {
+    display: none;
 }
