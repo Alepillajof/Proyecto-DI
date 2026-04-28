@@ -8,22 +8,18 @@ body {
     height: 100vh;
 }
 
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* FONDO PRINCIPAL */
 .header {
     height: 100vh;
-    background: url("../images/fondo.png") no-repeat center/cover;
     position: relative;
     font-family: Arial, sans-serif;
 }
 
-/* NAVBAR */
 .navbar {
     width: 90%;
     margin: auto;
@@ -40,7 +36,6 @@ body {
     color: white;
 }
 
-/* LOGO */
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -51,7 +46,6 @@ body {
     color: white;
 }
 
-/* MENU */
 .menu {
     list-style: none;
     display: flex;
@@ -67,14 +61,12 @@ body {
     color: #a855f7;
 }
 
-/* HERO CONTENT */
 .hero {
     position: relative;
     height: 100%;
     color: cyan;
 }
 
-/* POSICIONES */
 .left {
     position: absolute;
     left: 50px;
@@ -93,7 +85,6 @@ body {
     bottom: 25%;
 }
 
-/* TEXTO CENTRAL */
 .texto {
     position: absolute;
     bottom: 10%;
@@ -104,13 +95,11 @@ body {
     padding: 0 20px;
 }
 
-/* MENU LINKS */
 .menu li {
     cursor: pointer;
     position: relative;
 }
 
-/* EFECTO SUBRAYADO AL PASAR EL MOUSE */
 .menu li::after {
     content: "";
     position: absolute;
@@ -118,7 +107,7 @@ body {
     bottom: -5px;
     width: 0%;
     height: 2px;
-    background: white; /* mismo color, no cambia */
+    background: white; 
     transition: 0.3s;
 }
 
@@ -130,7 +119,6 @@ body {
     font-weight: bold;
 }
 
-/* QUITAR subrayado en Log in */
 .menu li:last-child::after {
     display: none;
 }
