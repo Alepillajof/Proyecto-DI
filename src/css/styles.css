@@ -17,12 +17,13 @@ body {
     height: 100vh;
     position: relative;
     font-family: Arial, sans-serif;
+    padding-top: 20px;
 }
 
 .navbar {
     width: 90%;
     margin: auto;
-    margin-top: 0px;
+    margin-top: 20px;
     padding: 15px 30px;
 
     display: flex;
@@ -480,4 +481,49 @@ body {
 .card p {
     font-size: 0.9rem;
     color: #ccc;
+}
+
+@keyframes neonGlow {
+    0% {
+        box-shadow: 0 0 5px #00eaff;
+    }
+    50% {
+        box-shadow: 0 0 20px #00eaff, 0 0 40px #00eaff;
+    }
+    100% {
+        box-shadow: 0 0 5px #00eaff;
+    }
+}
+
+.hero h3 {
+    animation: neonGlow 2s infinite alternate;
+}
+
+.right {
+    animation: neonGlowPink 2s infinite alternate;
+}
+
+@keyframes neonGlowPink {
+    0% { box-shadow: 0 0 5px #ff3cff; }
+    50% { box-shadow: 0 0 20px #ff3cff, 0 0 40px #ff3cff; }
+    100% { box-shadow: 0 0 5px #ff3cff; }
+}
+
+.card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 0 20px rgba(0,255,255,0.6);
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.hero h3 {
+    animation: float 3s ease-in-out infinite;
 }
