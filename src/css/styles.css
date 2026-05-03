@@ -1,11 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("../images/4k-cyberpunk-2077-ps-game-sr-1366x768\ \(2\).jpg");
+    background-image: url("../images/4k-cyberpunk-2077-ps-game-sr-1366x768 (2).jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 * {
@@ -23,7 +22,7 @@ body {
 .navbar {
     width: 90%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 15px 30px;
 
     display: flex;
