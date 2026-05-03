@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("../images/394b3811-e16f-41c8-be2f-75a6879246c9.png");
-    background-size: cover;      /* ocupa toda la pantalla */
-    background-position: center; /* centrada */
+    background-image: url("../images/4k-cyberpunk-2077-ps-game-sr-1366x768\ \(2\).jpg");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
 }
@@ -30,14 +30,15 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     color: white;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     color: #a855f7;
 }
@@ -54,50 +55,12 @@ body {
 
 .menu li {
     cursor: pointer;
+    position: relative;
     transition: 0.3s;
 }
 
 .menu li:hover {
     color: #a855f7;
-}
-
-.hero {
-    position: relative;
-    height: 100%;
-    color: cyan;
-}
-
-.left {
-    position: absolute;
-    left: 50px;
-}
-
-.right {
-    position: absolute;
-    right: 50px;
-}
-
-.top {
-    top: 35%;
-}
-
-.bottom {
-    bottom: 25%;
-}
-
-.texto {
-    position: absolute;
-    bottom: 10%;
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
-    color: cyan;
-    padding: 0 20px;
-}
-
-.menu li {
-    cursor: pointer;
-    position: relative;
 }
 
 .menu li::after {
@@ -107,7 +70,7 @@ body {
     bottom: -5px;
     width: 0%;
     height: 2px;
-    background: white; 
+    background: white;
     transition: 0.3s;
 }
 
@@ -115,10 +78,190 @@ body {
     width: 100%;
 }
 
-.menu li:last-child {
-    font-weight: bold;
+.hero {
+    position: relative;
+    height: 100%;
+    color: cyan;
 }
 
-.menu li:last-child::after {
-    display: none;
+.top{
+    top: 31%;
+}
+
+.bottom{
+    bottom: 33%;
+}
+
+.left{
+    left: 55px;
+}
+
+.right{
+    right: 55px;
+}
+
+
+.hero h3{
+    width: 270px;
+    height: 78px;
+    padding: 0 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    position: absolute;
+    overflow: hidden;
+
+    color: #00f7ff;
+
+    background: rgba(3, 10, 35, 0.55);
+    border: 2px solid #00eaff;
+
+    /* forma exacta */
+    clip-path: polygon(
+        0 50%,
+        7% 0,
+        100% 0,
+        93% 50%,
+        100% 100%,
+        7% 100%
+    );
+
+    box-shadow:
+    0 0 8px #00eaff,
+    0 0 18px #00eaff,
+    inset 0 0 8px rgba(0,255,255,.4);
+
+    transition: .35s ease;
+}
+
+.hero h3::before{
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border: 1px solid rgba(0,255,255,.45);
+
+    clip-path: polygon(
+        0 50%,
+        7% 0,
+        100% 0,
+        93% 50%,
+        100% 100%,
+        7% 100%
+    );
+}
+
+.right{
+    color: #ff3cff;
+}
+
+.right.hero h3{
+    border-color: #ff3cff;
+}
+
+.hero h3 i{
+    font-size: 34px;
+    z-index: 2;
+}
+
+.hero h3 span{
+    z-index: 2;
+}
+
+.left{
+    left: 65px;
+}
+
+.right{
+    right: 65px;
+}
+
+.top{
+    top: 36%;
+}
+
+.bottom{
+    bottom: 26%;
+}
+
+
+.hero h3:hover{
+    transform: scale(1.05) translateY(-3px);
+
+    box-shadow:
+    0 0 12px #00ffff,
+    0 0 28px #00ffff,
+    0 0 45px #00ffff;
+}
+
+.right:hover{
+    box-shadow:
+    0 0 12px #ff3cff,
+    0 0 28px #ff3cff,
+    0 0 45px #ff3cff;
+}
+
+
+.texto{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 68%;          
+    padding: 18px 28px; 
+
+    text-align: center;
+    font-size: 24px;    
+    font-weight: bold;
+    line-height: 1.45;
+
+    color: #00ffff;
+
+    background: rgba(5, 8, 30, 0.58);
+    border: 2px solid #00eaff;
+    border-radius: 18px;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+    0 0 10px #00eaff,
+    0 0 25px rgba(0,255,255,.55),
+    inset 0 0 12px rgba(0,255,255,.20);
+
+    text-shadow:
+    0 0 8px #00ffff,
+    0 0 18px #00ffff;
+}
+
+.texto::before{
+    content:"";
+    position:absolute;
+    inset:8px;
+    border:1px solid rgba(0,255,255,.30);
+    border-radius:12px;
+}
+
+@media(max-width:900px){
+
+.top{
+    top: 28%;
+}
+
+.bottom{
+    bottom: 38%;
+}
+
+.texto{
+    width: 92%;
+    font-size: 18px;
+    padding: 14px 16px;
+}
+
 }
