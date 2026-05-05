@@ -12,22 +12,16 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="./src/css/normalize.css">
 
-    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="preload" href="./src/css/styles.css" as="style" onload="this.rel='stylesheet'">
 
     
 
     <link rel="shortcut icon" href="./src/images/android-chrome-192x192.png" type="image/x-icon">
-    <!-- Basic Icons -->
     <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
-    <!-- Filled Icons -->
-    <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
-    <!-- Brand Icons -->
-    <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     
 </head>
@@ -89,7 +83,7 @@
             </div>
 
             <div class="about-image">
-                <img src="./src/images/Imagen_Acerca_De.jpeg" alt="setup gamer">
+                <img src="./src/images/Imagen_Acerca_De.jpeg" loading="lazy" width="300" height="200" alt="setup gamer">
             </div>
 
         </div>
@@ -102,7 +96,7 @@
         <div class="cards">
 
             <div class="card">
-                <img src="./src/images/Servicios1.jpeg" alt="">
+                <img src="./src/images/Servicios1.jpeg" loading="lazy" width="300" height="200" alt="servicio">
                 <h3>Recomendaciones Personalizadas</h3>
                 <p>
                     Obtén recomendaciones de juegos basadas en tu presupuesto, gustos y tiempo disponible
@@ -110,7 +104,7 @@
             </div>
 
             <div class="card">
-                <img src="./src/images/Servicios2.jpeg" alt="">
+                <img src="./src/images/Servicios2.jpeg" loading="lazy" width="300" height="200" alt="servicio">
                 <h3>Amplio Catálogo</h3>
                 <p>
                     Explora una gran variedad de juegos de diferentes géneros y plataformas
@@ -118,7 +112,7 @@
             </div>
 
             <div class="card">
-                <img src="./src/images/Servicios3.jpeg" alt="">
+                <img src="./src/images/Servicios3.jpeg" loading="lazy" width="300" height="200" alt="servicio">
                 <h3>Mejores decisiones</h3>
                 <p>
                     Compara opciones y optimiza tu dinero eligiendo juegos que realmente valga la pena
@@ -154,6 +148,7 @@
 
             <div class="contact__map">
                 <iframe
+                    loading = "lazy"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7914484515727!2d-78.4919116242656!3d-0.2102860353982151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a107e1cd44b%3A0x88a284f66939ed4!2sESCUELA%20POLIT%C3%89CNICA%20NACIONAL!5e0!3m2!1ses-419!2sec!4v1748692694233!5m2!1ses-419!2sec"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>

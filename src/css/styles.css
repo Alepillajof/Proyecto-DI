@@ -991,3 +991,29 @@ hr{
     padding: 10px;
   }
 }
+
+/* ⚡ OPTIMIZACIÓN DE RENDER */
+.hero,
+.card,
+.navbar,
+.about-container {
+    will-change: transform;
+}
+
+
+@media (max-width: 768px){
+
+.hero h3{
+    animation: none !important;
+    box-shadow: none !important;
+}
+
+.card{
+    backdrop-filter: none !important;
+}
+
+.navbar{
+    backdrop-filter: none !important;
+}
+
+}
