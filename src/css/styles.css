@@ -125,7 +125,6 @@ body {
     background: rgba(3, 10, 35, 0.55);
     border: 2px solid #00eaff;
 
-    /* forma exacta */
     clip-path: polygon(
         0 50%,
         7% 0,
@@ -275,7 +274,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh; /* IMPORTANTE */
+    min-height: 100vh; 
 }
 
 .about,
@@ -283,8 +282,6 @@ body {
     background: transparent !important;
 }
 
-
-/* ===== ACERCA DE ===== */
 .about {
     padding: 80px 10%;
     color: white;
@@ -327,7 +324,6 @@ body {
     border-radius: 20px;
 }
 
-/* ===== SERVICIOS ===== */
 .services {
     padding: 80px 10%;
     text-align: center;
@@ -383,8 +379,6 @@ body {
     background: transparent !important;
 }
 
-
-/* ===== ACERCA DE ===== */
 .about {
     padding: 80px 10%;
     color: white;
@@ -427,7 +421,6 @@ body {
     border-radius: 20px;
 }
 
-/* ===== SERVICIOS ===== */
 .services {
     padding: 80px 10%;
     text-align: center;
@@ -523,25 +516,22 @@ body {
     animation: float 3s ease-in-out infinite;
 }
 
-
-/*: Styles for Section Contact */
-
 .contact{
-    margin: 40px 0;  /* ← reduce de 120px a 40px */
+    margin: 40px 0;  
     padding: 0 5%;
     background-image: url("../images/img_fondo_contact.png");
 }
 
-/* CONTENEDOR INTERNO */
+
 .contact__container{
     display: flex;
     gap: 40px;
     align-items: stretch;
     background-image: url("../images/img_fondo_contact.png");
-    padding: 40px;  /* ← agrega esto */
+    padding: 40px; 
 }
 
-/* FORMULARIO */
+
 .contact__form{
     background-color: rgba(166, 166, 166, 0.17);
     padding: 1.5rem;
@@ -549,30 +539,26 @@ body {
     flex: 1;
 }
 
-/* TITULO */
 .contact__title{
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
-/* TITULO CONTACTANOS */
 .contact__title{
     color: white;
 }
 
-/* TERMINOS Y CONDICIONES */
+
 .checkbox__label{
     color: white;
 }
-/* FORM */
 .contact__form form{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-/* INPUTS */
 .contact__form input,
 .contact__form textarea{
     padding: 0.75rem;
@@ -584,7 +570,7 @@ body {
 }
 
 .contact__form form button{
-    background-color: #a855f7; /* morado */
+    background-color: #a855f7; 
     color: white;
     border: 2px solid #a855f7;
     width: 6rem;
@@ -593,12 +579,11 @@ body {
     cursor: pointer;
     transition: 0.3s;
 }
-/* TEXTAREA */
+
 .contact__form textarea{
     resize: none;
 }
 
-/* CHECKBOX */
 .checkbox__label{
     font-weight: 600;
     display: flex;
@@ -606,14 +591,12 @@ body {
     gap: 8px;
 }
 
-/* FILA (checkbox + botón) */
 .fila{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* BOTÓN */
 .contact__form form button{
     border: 1px solid var(--colorDos);
     width: 6rem;
@@ -621,7 +604,6 @@ body {
     cursor: pointer;
 }
 
-/* MAPA */
 .contact__map{
     flex: 1;
 }
@@ -633,20 +615,17 @@ body {
     border-radius: 10px;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px){
     .contact__container{
         flex-direction: column;
     }
 }
 
-/*: Styles for Section Footer */
 .footer{
   background-color: var(--colorCuatro);
 }
 
 .footer__container{
-  /* border: 1px solid red; */
   padding: 1rem;
 }
 
@@ -708,35 +687,302 @@ hr{
   }
 }
 
-/* TITULOS */
 .footer__social h3,
 .footer__links h3,
 .footer__contact h3{
   color: white;
 }
 
-/* ICONOS */
 .fa-brands{
   color: white;
 }
 
-/* LINKS */
 .links a{
   color: white;
 }
 
-/* TEXTO */
 .call,
 .write{
   color: white;
 }
 
-/* LINEA */
 hr{
   border: 1px solid white;
 }
 
-/* COPYRIGHT */
 .footer__copy{
   color: white;
+}
+
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .menu {
+    gap: 18px;
+    font-size: 14px;
+  }
+
+  .hero h3 {
+    width: 220px;
+    height: 64px;
+    font-size: 22px;
+    padding: 0 16px;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero h3 i {
+    font-size: 26px;
+  }
+
+  .left  { left: 30px; }
+  .right { right: 30px; }
+  .top   { top: 32%; }
+  .bottom{ bottom: 28%; }
+
+  .texto {
+    font-size: 20px;
+    width: 78%;
+  }
+
+  .about {
+    padding: 60px 6%;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+
+  .services {
+    padding: 60px 6%;
+  }
+
+  .card {
+    width: 260px;
+  }
+
+  .contact {
+    padding: 0 4%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* --- NAVBAR --- */
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    width: 94%;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 16px;
+    font-size: 13px;
+  }
+
+  .header {
+    height: auto;
+    min-height: 100svh;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 16px 100px;
+    gap: 14px;
+    margin-top: 20px;
+  }
+
+  .hero h3 {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 90%;
+    max-width: 320px;
+    height: 60px;
+    font-size: 18px;
+    padding: 0 18px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .texto {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    width: 92%;
+    font-size: 15px;
+    padding: 14px 16px;
+    margin: 10px auto 0;
+  }
+
+  .about {
+    padding: 40px 5%;
+  }
+
+  .about-container {
+    flex-direction: column;
+    padding: 24px 20px;
+    gap: 24px;
+  }
+
+  .about-text {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .about-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .about-image img {
+    max-width: 100%;
+    border-radius: 14px;
+  }
+
+  .services {
+    padding: 40px 5%;
+  }
+
+  .services h2 {
+    font-size: 1.6rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 360px;
+  }
+
+  .contact {
+    margin: 20px 0;
+    padding: 0 4%;
+  }
+
+  .contact__container {
+    flex-direction: column;
+    padding: 24px 16px;
+    gap: 24px;
+  }
+
+  .contact__title {
+    font-size: 1.1rem;
+  }
+
+  .contact__map iframe {
+    min-height: 260px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    gap: 24px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .social__icons,
+  .links,
+  .call,
+  .write {
+    text-align: center;
+  }
+
+  .fa-brands {
+    font-size: 1.3rem;
+    margin: 0 0.6rem;
+  }
+
+  .footer__copy {
+    font-size: 0.8rem;
+    padding: 0.8rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 19px;
+  }
+
+  .menu {
+    font-size: 12px;
+    gap: 8px 12px;
+  }
+
+  .hero h3 {
+    font-size: 15px;
+    height: 52px;
+    padding: 0 14px;
+  }
+
+  .hero h3 i {
+    font-size: 20px;
+  }
+
+  .texto {
+    font-size: 13px;
+    padding: 12px 14px;
+  }
+
+  .about-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .services h2 {
+    font-size: 1.3rem;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  .contact__form input,
+  .contact__form textarea {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .fila {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .contact__form form button {
+    width: 100%;
+    padding: 10px;
+  }
 }
