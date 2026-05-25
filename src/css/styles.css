@@ -305,6 +305,61 @@ body {
     color: #ccc;
 }
 
+/* ===================== TESTIMONIALS ===================== */
+.testimonials {
+    padding: 0 10% 80px;
+    text-align: center;
+    color: white;
+}
+
+.testimonials__header {
+    margin-bottom: 32px;
+}
+
+.testimonials__header h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.testimonial {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 22px;
+    padding: 24px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+.testimonial__stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    color: #ffd166;
+    margin-bottom: 16px;
+}
+
+.testimonial p {
+    color: #f3f4f6;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.testimonial h3 {
+    color: #00e0ff;
+    font-size: 1rem;
+}
+
+
+
+
+
+
 /* ===================== CONTACT ===================== */
 .contact {
     margin: 40px 0;
